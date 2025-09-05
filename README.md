@@ -4,7 +4,9 @@
 Omar Ayyad
 
 ## Descriptions
-This is my implementation of a number base converter. The program has three main functions:
+This is my implementation of a number base converter. The program reads from `A1_tests.txt` and outputs the result to `output.txt` 
+
+The program has three main functions:
 
 ### 1. `div_convert`
 
@@ -27,7 +29,6 @@ This is my implementation of a number base converter. The program has three main
 - Performs a **bitwise AND operation with 0xFF**.
 - Prints the results of all these operations in all four bases.
 
-## Build Instructions
 ## Build Instructions
 
 Open a terminal in the project directory and run:
