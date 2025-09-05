@@ -64,8 +64,8 @@ int main() {
 
         // Handle div_convert test
         if (strncmp(line, "div_convert", 11) == 0) {
-            scanned = sscanf(line, "%s %u %d %s", func, &input1, &input2, expected);
-            if (scanned != 4) {
+            scanned = sscanf(line, "%s %u %d %s", func, &input1, &input2, expected); //Read the line into function name, input 1 and 2, and expected char array. Assign input1 and 2 to values of the line
+            if (scanned != 4) { //If line is malformed then print error and continue
                 printf("Invalid div_convert test line: %s\n", line);
                 continue;
             }
@@ -78,7 +78,7 @@ int main() {
         
         // Handle sub_convert test
         } else if (strncmp(line, "sub_convert", 11) == 0) {
-            scanned = sscanf(line, "%s %u %d %s", func, &input1, &input2, expected);
+            scanned = sscanf(line, "%s %u %d %s", func, &input1, &input2, expected); 
             if (scanned != 4) {
                 printf("Invalid sub_convert test line: %s\n", line);
                 continue;
@@ -91,7 +91,7 @@ int main() {
 
         //Print tables
         } else if (strncmp(line, "print_tables", 12) == 0) {
-            scanned = sscanf(line, "%s %u %s", func, &input1, expected);
+            scanned = sscanf(line, "%s %u %s", func, &input1, expected); 
             if (scanned != 3 ) {
                 printf("Invalid print_tables line: %s\n", line);
                 continue;
@@ -114,3 +114,4 @@ int main() {
 
     return 0;
 }
+
